@@ -1,6 +1,68 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Responsive base styles */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile menu specific styles */
+.mobile-menu-container {
+  position: relative;
+}
+
+.mobile-menu-container button:focus + div,
+.mobile-menu-container button:active + div {
+  display: block;
+}
+
+.mobile-menu-container div[role="menu"] a {
+  transition: background-color 0.2s;
+}
+
+/* Media query adjustments */
+@media (max-width: 640px) {
+  /* Small screen (mobile) adjustments */
+  html {
+    font-size: 14px;
+  }
+  
+  /* Ensure dropdown menu is visible on mobile */
+  .dropdown .dropdown-content {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  /* Medium screen (tablet) adjustments */
+  html {
+    font-size: 15px;
+  }
+  
+  /* Ensure dropdown menu is visible on tablets */
+  .dropdown .dropdown-content {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Large screen adjustments */
+  html {
+    font-size: 16px;
+  }
+}
+
 /* Your custom styles can go here */
 
 
