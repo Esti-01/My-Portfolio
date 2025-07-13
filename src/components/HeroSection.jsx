@@ -15,8 +15,7 @@ export default function Hero() {
         <div className="max-w-md sm:max-w-lg md:max-w-xl">
           <h1 className="text-4xl sm:text-5xl font-bold">Hello there</h1>
           <p className="py-4 sm:py-6 text-sm sm:text-base md:text-lg">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi. In deleniti eaque aut repudiandae et a id nisi.
+            -- Input your text here --
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             <button className="btn btn-primary w-full sm:w-auto">Download CV</button>
